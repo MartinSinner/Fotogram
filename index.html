@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogram</title>
+    <link rel="icon" href="/img/favicon_fotogram.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header class="content-limiter">
+        <img src="img/favicon_fotogram.png" alt="logo">
+        <h1><span style="color: white;">Foto</span><span style="color: #FF4081;">gram</span></h1>
+    </header>
+
+    <main>
+        <p>Back to the Future: Capturing 80's Magic</p>
+        <div id="gallery"></div>
+    </main>
+
+    <footer>
+
+
+        <p>Martin Sinner</p>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="img/icons/facebook_logo.png" alt="Facebook"></a>
+
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="img/icons/instagram_logo.png" alt="Instagram"></a>
+            <a href="mailto:m-sinner@web.de" target="_blank">
+                <img src="img/icons/mail.png" alt="E-Mail"></a>
+        </div>
+    </footer>
+
+
+    <div id="overlay">
+
+        <div id="overlay-window">
+            <button id="button" onclick="closeOverlay()">x</button>
+            <button id="left-arrow" onclick="prevImage()">&#8249;</button>
+            <button id="right-arrow" onclick="nextImage()">&#8250;</button>
+            <h2 id="overlay-title"></h2>
+            <img id="overlay-img" src="" alt="Vergrößertes Bild">
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
